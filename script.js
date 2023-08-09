@@ -1,4 +1,4 @@
-const secretPhrases=["never","you","that","bullet","break"];
+const secretPhrases=["black","blue","red","green","withe","gray","france","german","iran","berezil"];
 
 let randomItem= "";
 let clicked= [];
@@ -26,12 +26,19 @@ function checkIfWon(){
         document.getElementById("gameover").querySelector("p").innerHTML="Win Prfect";
         document.getElementById("image").querySelector("img").src="assets/winner.png";
     }
+    else if(mistakes === 7){
+        location.reload();
+    }
 }
 
 function checkIflost(){
     if(mistakes === 6){
         document.getElementById("gameover").querySelector("P").style.display="block";
         document.getElementById("clue").innerHTML=`<p>Random word is: ${randomItem}</p>`;
+        
+    }
+    else if(mistakes === 7){
+        location.reload();
     }
 }
 function updateHangmanPicture(){

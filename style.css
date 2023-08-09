@@ -33,7 +33,7 @@ h1 {
 }
 
 #letters div {
-   margin: 5px;
+   margin: 7px;
    padding-top: 0.5em;
    border: 1px solid gray;
    color: darkgreen;
@@ -45,6 +45,7 @@ h1 {
 
 #letters div:hover {
    background-color: palegreen;
+   cursor: pointer;
 }
 
 #clue p {
